@@ -6,6 +6,7 @@ import SIPSection from './investments/SIPSection';
 import ETFSection from './investments/ETFSection';
 import GoalPlanner from './investments/GoalPlanner';
 import LearnCards from './investments/LearnCards';
+import AeroSection from './investments/AeroSection';
 
 interface Props { budget: number; spent: number; }
 
@@ -36,13 +37,16 @@ export default function InvestmentsPage({ budget, spent }: Props) {
         {/* Row 3: SIP Section */}
         <SIPSection />
 
-        {/* Row 4: Goal Planner + Simulator */}
+        {/* Row 4: Aero Premium Investments */}
+        <AeroSection />
+
+        {/* Row 5: Goal Planner + Simulator */}
         <GoalPlanner />
 
-        {/* Row 5: ETF Discovery */}
+        {/* Row 6: ETF Discovery */}
         <ETFSection />
 
-        {/* Row 6: Learn Cards */}
+        {/* Row 7: Learn Cards */}
         <LearnCards />
       </div>
     </div>

@@ -9,6 +9,7 @@ jest.mock('./investments/SIPSection', () => () => <div data-testid="mock-sip-sec
 jest.mock('./investments/ETFSection', () => () => <div data-testid="mock-etf-section">ETFSection</div>);
 jest.mock('./investments/GoalPlanner', () => () => <div data-testid="mock-goal-planner">GoalPlanner</div>);
 jest.mock('./investments/LearnCards', () => () => <div data-testid="mock-learn-cards">LearnCards</div>);
+jest.mock('./investments/AeroSection', () => () => <div data-testid="mock-aero-section">AeroSection</div>);
 
 describe('InvestmentsPage Component', () => {
   it('renders all nested sections and widgets successfully', () => {
@@ -21,5 +22,6 @@ describe('InvestmentsPage Component', () => {
     expect(screen.getByTestId('mock-etf-section')).toBeInTheDocument();
     expect(screen.getByTestId('mock-goal-planner')).toBeInTheDocument();
     expect(screen.getByTestId('mock-learn-cards')).toBeInTheDocument();
+    expect(screen.getByTestId('mock-aero-section')).toBeInTheDocument();
   });
 });
